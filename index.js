@@ -10,7 +10,7 @@ const 	http = require("http"),
 
 let port = 3454;
 for(let key in process.env){//allow for command-line config of port
-	if(key.toLowerCase === "port"){
+	if(key.toLowerCase() === "port"){
 		let newPort = parseInt(process.env[key], 10);
 		if(newPort)//lazy verification : was
 			port = newPort
@@ -29,7 +29,7 @@ const httpServer = http.createServer(handleRequest),
 
 // Start the server
 httpServer.listen(port,function(){
-  console.log('The http server is up and running now');
+  console.log('The server is listening to http on port', port);
 });
 
 
