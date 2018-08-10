@@ -5,3 +5,4 @@ The first homework assignment for the nodejs masterclass (from Pirple)
 - change port with environment variable :
     - on linux : PORT=XXXX node index.js
     - on windows : set PORT=XXXX & node index.js
+- everything is 404 except for route "/hello/", which says one greeting or another.
