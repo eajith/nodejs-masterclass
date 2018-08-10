@@ -40,8 +40,6 @@ httpServer.listen(port,function(){
   console.log('The server is listening to http on port', port);
 });
 
-
-
 // hoisted and deferred definitions
 function handleRequest(req, res){
 	//ignore query for now, this is a barebones API
