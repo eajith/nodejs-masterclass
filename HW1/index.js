@@ -12,7 +12,7 @@ let port = 3454;
 for(let key in process.env){//allow for command-line config of port
 	if(key.toLowerCase() === "port"){
 		let newPort = parseInt(process.env[key], 10);
-		if(newPort)//lazy verification : was
+		if(newPort)//lazy verification : if it's not NaN or 0, I'm ok with it...
 			port = newPort
 	}
 }
