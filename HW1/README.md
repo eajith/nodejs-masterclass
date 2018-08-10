@@ -1,4 +1,4 @@
-# nodejs-masterclass-hw1
+# nodejs-masterclass/hw1
 The first homework assignment for the nodejs masterclass (from Pirple)
 
 - start the server on default port with node index.js

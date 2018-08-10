@@ -20,7 +20,15 @@ for(let key in process.env){//allow for command-line config of port
 const httpServer = http.createServer(handleRequest),
 	  routes = {
 	  	"hello" : (data, cb)=>{
-	  		cb(200, "hello");
+	  		const greetings = [
+		  			"Well, hello to you too, my friend !",
+		  			"Hi, there!",
+		  			"Hoi, mate!",
+		  			"Greetings and salutations.",
+		  		],
+		  		rnd = Math.floor(Math.random() * greetings.length);
+
+	  		cb(200, greetings[rnd]);
 	  	},
 	  	"default" : (data, cb)=>{
 	  		cb(404);
